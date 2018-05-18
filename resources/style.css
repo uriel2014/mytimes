@@ -1,0 +1,27 @@
+.header {
+  display: inline-flex;
+  font-family: Verdana;
+  font-size: 14px;
+  font-weight: bold;
+  width:100%;
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
+  align-items: flex-end;
+}
+
+.header p {
+  color: MediumAquamarine;
+  margin-left: 15px;
+  margin-top: 15px;
+}
+
+.nav li {
+  display:inline-block;
+  list-style-type: none;
+  width: 100px;
+  height: 10px;
+}
+.header a{
+  color: black;
+  word-spacing: 20px;
+}
