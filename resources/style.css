@@ -1,33 +1,46 @@
 
 
 .header {
-  display: inline-flex;
+  display: flex;
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
   width:100%;
   border-bottom: 1px solid black;
-  padding-bottom: 10px;
+  height: 80px;
+  align-items:center;
+  position: fixed;
+  z-index: 1;
+  height:80px;
+  background-color: white;
   justify-content: space-between;
 }
 
-.header p {
+.logo span {
   color: MediumAquamarine;
-  margin-left: 15px;
-  margin-top: 15px;
 }
 
-
-.nav li {
-  display:inline-block;
-  list-style-type: none;
-  width: 100px;
+.logo img{
+  height: 60px;
+  width: 70px;
+  margin-right: 15px;
 }
-.header a{
+
+.header nav{
+  padding-right:40px;
+}
+ a{
   color: black;
+}
+
+nav span{
+  display:inline-block;
+  padding: 20px 10px;
 }
 /* Let us SKIP the Header Section and commence with the rest */
 
+
+/*
 .main {
   display: inline-flex;
   justify-content: space-between;
@@ -38,6 +51,9 @@
 }
 .column.large {
   width:630px;
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 .column.medium {
   width:300px;
@@ -65,6 +81,8 @@ font-weight: bold;
 font-size:30px;
 color:white;
 height: 200px;
+align-content:center;
+align-items: flex-start;
 }
 .paragraph {
   font-family: Georgia;
